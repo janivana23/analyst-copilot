@@ -1,0 +1,19 @@
+# railway.toml
+# Railway project configuration
+# Docs: https://docs.railway.app/reference/config-as-code
+
+[build]
+builder = "nixpacks"
+
+# ── Service 1: Streamlit web app ─────────────────────────────────────────────
+# This is the main app users visit in their browser.
+# Railway auto-detects the PORT env var and exposes it publicly.
+
+[deploy]
+startCommand = "streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 5
+
+# Health check — Railway pings this to confirm the app is up
+healthcheckPath = "/"
+healthcheckTimeout = 30

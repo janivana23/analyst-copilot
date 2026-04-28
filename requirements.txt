@@ -1,0 +1,23 @@
+# Core app
+streamlit==1.43.2
+pandas==2.2.3
+numpy==1.26.4
+plotly==5.24.1
+python-dateutil==2.9.0
+python-dotenv==1.0.1
+
+# AI insights
+openai==1.51.2
+
+# Database
+supabase==2.9.1
+
+# Xero connector
+requests==2.32.3
+
+# Email — Gmail SMTP uses Python stdlib (no install needed)
+# Optional: Resend for custom domain email
+resend==2.5.0
+
+# Timezone for scheduler
+tzdata==2024.2
