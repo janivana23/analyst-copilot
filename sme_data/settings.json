@@ -1,0 +1,11 @@
+{
+  "business": "My Business",
+  "industry": "F&B",
+  "smtp_user": "janiceivana@gmail.com",
+  "smtp_pass": "nlfm zxlg yncs ahmw",
+  "whatsapp_to": "",
+  "twilio_sid": "",
+  "twilio_token": "",
+  "twilio_from": "",
+  "openai_key": ""
+}
